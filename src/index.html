@@ -14,39 +14,39 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style> -->
 </head>
-<body class="font-roboto">
+<body class="font-roboto h-screen">
   <!-- Sign-up form start -->
-  <div class="newsletter__card">
-    <div class="newsletter__img">
-      <img class="newsletter__img__mobile" src="../assets/images/illustration-sign-up-mobile.png" alt="">
+  <div class="newsletter__card flex flex-col items-center">
+    <div class="newsletter__img w-full">
+      <img class="newsletter__img__mobile w-full" src="../assets/images/illustration-sign-up-mobile.png" alt="">
       <img class="newsletter__img__desktop hidden" src="../assets/images/illustration-sign-up-desktop.png" alt="">
      </div>
-    <div class="newsletter__form__container">
-      <h1 class="newsletter__title">Stay updated!</h1>
+    <div class="newsletter__form__container px-4 py-6 flex flex-col gap-6">
+      <h1 class="newsletter__title text-dark-grey font-extrabold text-3xl">Stay updated!</h1>
       <p class="newsletter__description">Join 60,000+ product managers receiving monthly updates on:</p>
-      <ul class="newsletter__list">
-        <li class="list__item">
+      <ul class="newsletter__list flex flex-col gap-4">
+        <li class="list__item flex gap-4">
           <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
           <span>Product discovery and building what matters</span>
         </li>
-        <li class="list__item">
+        <li class="list__item flex gap-4">
           <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
           <span>Measuring to ensure updates are a success</span>
         </li>
-        <li class="list__item">
+        <li class="list__item flex gap-4">
           <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
           <span>And much more!</span>
         </li>
       </ul>
   
-      <form action="" class="newsletter__form">
-        <div class="form__email">
-          <label for="email">Email address </label>
-          <input type="email" name="email" id="email" required>
+      <form action="" class="newsletter__form flex flex-col gap-4">
+        <div class="form__email flex flex-col gap-2 w-full">
+          <label class="font-extrabold text-dark-grey" for="email">Email address </label>
+          <input class="border rounded-md p-4" type="email" name="email" id="email" required>
         </div>
   
-        <div class="form__button">
-          <input type="submit" value="Subscribe to monthly newsletter">
+        <div class="form__button w-full">
+          <input type="submit" value="Subscribe to monthly newsletter" class="rounded-md bg-dark-grey text-white p-5 w-full">
         </div>
       </form>
     </div>
@@ -78,7 +78,7 @@
   <!-- Success message end -->
 
   <footer>
-    <div class="attribution">
+    <div class="attribution text-xs flex items-center justify-center">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="https://github.com/LaissaSaraiva" target="_blank">laissasc♥</a>.
     </div>
