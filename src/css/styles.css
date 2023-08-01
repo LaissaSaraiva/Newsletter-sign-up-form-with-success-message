@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: #e5e7eb;
+  border-color: currentColor;
   /* 2 */
 }
 
@@ -434,6 +434,13 @@ video {
   display: none;
 }
 
+@font-face {
+  font-family: 'Roboto';
+
+  src: url('./assets/fonts/Roboto-Bold.ttf') format("ttf"),
+    url('./assets/fonts/Roboto-Regular.ttf') format("ttf"),
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -536,6 +543,10 @@ video {
 
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.font-roboto {
+  font-family: Roboto, sans-serif;
 }
 
 .filter {
