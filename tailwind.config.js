@@ -7,7 +7,7 @@ module.exports = {
       desktop: "1024px"
     },
     fontFamily: {
-      roboto: 'Roboto, sans-serif',
+      roboto: ['Roboto', 'sans-serif'],
     },
     colors: {
       tomato: 'hsl(4, 100%, 67%)',

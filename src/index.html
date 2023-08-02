@@ -14,14 +14,14 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style> -->
 </head>
-<body class="font-roboto h-screen">
+<body class="font-roboto desktop:flex desktop:flex-col desktop:items-center desktop:justify-center desktop:bg-dark-grey h-screen">
   <!-- Sign-up form start -->
-  <div class="newsletter__card flex flex-col items-center">
-    <div class="newsletter__img w-full">
-      <img class="newsletter__img__mobile w-full" src="../assets/images/illustration-sign-up-mobile.png" alt="">
-      <img class="newsletter__img__desktop hidden" src="../assets/images/illustration-sign-up-desktop.png" alt="">
+  <div class="newsletter__card flex flex-col items-center bg-white desktop:rounded-2xl desktop:flex-row-reverse desktop:justify-center desktop:items-center desktop:p-6">
+    <div class="newsletter__img w-full desktop:w-auto">
+      <img class="newsletter__img__mobile w-full desktop:hidden" src="../assets/images/illustration-sign-up-mobile.png" alt="">
+      <img class="newsletter__img__desktop hidden desktop:flex" src="../assets/images/illustration-sign-up-desktop.png" alt="">
      </div>
-    <div class="newsletter__form__container px-4 py-6 flex flex-col gap-6">
+    <div class="newsletter__form__container px-7 py-6 flex flex-col gap-6">
       <h1 class="newsletter__title text-dark-grey font-extrabold text-3xl">Stay updated!</h1>
       <p class="newsletter__description">Join 60,000+ product managers receiving monthly updates on:</p>
       <ul class="newsletter__list flex flex-col gap-4">
@@ -77,7 +77,7 @@
   </div>
   <!-- Success message end -->
 
-  <footer>
+  <footer class="footer text-dark-grey desktop:text-white">
     <div class="attribution text-xs flex items-center justify-center">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="https://github.com/LaissaSaraiva" target="_blank">laissasc♥</a>.
